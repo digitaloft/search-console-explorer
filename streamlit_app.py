@@ -50,6 +50,9 @@ with tab1:
     st.write("")
     
 # Convert secrets from the TOML file to strings
+    clientSecret = str(st.secrets["installed"]["client_secret"])
+    clientId = str(st.secrets["installed"]["client_id"])
+    redirectUri = str(st.secrets["installed"]["redirect_uris"][0])
 
     st.markdown("")
 
