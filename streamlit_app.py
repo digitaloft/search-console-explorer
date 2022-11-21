@@ -48,8 +48,8 @@ with tab1:
     st.sidebar.markdown("")
 
     st.write("")
-    
-# Convert secrets from the TOML file to strings
+
+    # Convert secrets from the TOML file to strings
     clientSecret = str(st.secrets["installed"]["client_secret"])
     clientId = str(st.secrets["installed"]["client_id"])
     redirectUri = str(st.secrets["installed"]["redirect_uris"][0])
@@ -93,9 +93,9 @@ with tab1:
 
         credentials = {
             "installed": {
-                "client_id": "220804959114-e6m3lgr4225j5jvnutdopglgv4uqo7po.apps.googleusercontent.com",
-                "client_secret": "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",
-                "redirect_uris": "https://www.digitaloft.co.uk/",
+                "client_id": clientId,
+                "client_secret": clientSecret,
+                "redirect_uris": [],
                 "auth_uri": "https://accounts.google.com/o/oauth2/auth",
                 "token_uri": "https://accounts.google.com/o/oauth2/token",
             }
@@ -223,7 +223,6 @@ with tab1:
                         -   **Image**: Results that appear in the Images search results tab.
                         -   **Video**: Results that appear in the Videos search results tab.
                         -   **News**: Results that show in the News search results tab.
-
                         """,
                     )
 
@@ -492,7 +491,6 @@ with tab1:
                         -   **Image**: Results that appear in the Images search results tab.
                         -   **Video**: Results that appear in the Videos search results tab.
                         -   **News**: Results that show in the News search results tab.
-
                         """,
                         )
 
@@ -848,30 +846,20 @@ with tab2:
 
     st.write(
         """
-
     #### About this app
-
     * ✔️ One-click connect to the [Google Search Console API](https://developers.google.com/webmaster-tools)
     * ✔️ Easily traverse your account hierarchy
     * ✔️ Go beyond the [1K row UI limit](https://www.gsqi.com/marketing-blog/how-to-bulk-export-search-features-from-gsc/)
     * ✔️ Enrich your data querying with multiple dimensions layers and extra filters!
-
     ✍️ You can read the blog post [here](https://blog.streamlit.io/p/e89fd54e-e6cd-4e00-8a59-39e87536b260/) for more information.
-
     #### Going beyond the `25K` row limit
-
     * There's a `25K` row limit per API call on the [Cloud](https://streamlit.io/cloud) version to prevent crashes.
     * You can remove that limit by forking this code and adjusting the `RowCap` variable in the `streamlit_app.py` file
-
     #### Kudos
-
     This app relies on Josh Carty's excellent [Search Console Python wrapper](https://github.com/joshcarty/google-searchconsole). Big kudos to him for creating it!
-
     #### Questions, comments, or report a 🐛?
-
     * If you have any questions or comments, please DM [me](https://twitter.com/DataChaz). Alternatively, you can ask the [Streamlit community](https://discuss.streamlit.io).
     * If you find a bug, please raise an issue in [Github](https://github.com/CharlyWargnier/google-search-console-connector/pulls).
-
     #### Known bugs
     * You can filter any dimension in the table even if the dimension hasn't been pre-selected. I'm working on a fix for this.
     
