@@ -43,7 +43,7 @@ tab1, tab2 = st.tabs(["Main", "About"])
 
 with tab1:
 
-    st.sidebar.image("logo.png", width=290)
+    st.sidebar.image("logo.png", width=300)
 
     st.sidebar.markdown("")
 
