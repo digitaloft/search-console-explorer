@@ -142,7 +142,7 @@ with tab1:
     st.sidebar.write("")
 
     st.sidebar.caption(
-        "Made in 🎈 [Streamlit](https://www.streamlit.io/)."
+        "Made in [Streamlit](https://www.streamlit.io/)."
     )
 
     try:
