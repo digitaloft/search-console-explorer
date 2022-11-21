@@ -39,7 +39,7 @@ RowCap = 25000
 
 ###############################################################################
 
-tab1, tab2 = st.tabs(["Main", "About"])
+tab1, tab2 = st.tabs(["Main", "How to Use"])
 
 with tab1:
 
