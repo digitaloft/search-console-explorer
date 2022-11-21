@@ -93,9 +93,9 @@ with tab1:
 
         credentials = {
             "installed": {
-                "client_id": clientId,
-                "client_secret": clientSecret,
-                "redirect_uris": [],
+                "client_id": "220804959114-e6m3lgr4225j5jvnutdopglgv4uqo7po.apps.googleusercontent.com",
+                "client_secret": "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",
+                "redirect_uris": "https://www.digitaloft.co.uk/",
                 "auth_uri": "https://accounts.google.com/o/oauth2/auth",
                 "token_uri": "https://accounts.google.com/o/oauth2/token",
             }
