@@ -850,5 +850,13 @@ with tab2:
     * This tool allows you to export more than the Google Search Console interface of 1,000 rows of data. You can export up to 25,000 rows of data with this tool.
    
     * To use the tool: 
+    
+    1. Click the red 'Sign-In With Google' button.
+    2. Authorise the app via your Google account. Once you've done this, you will be redirected to the app in a new window.
+    3. Click the 'Access GSC API' button and you will see the app reload.
+    4. Choose the domain you want to explore from the dropdown and select the dimensions you want to view. Nested dimensions allow you to gather further data from your primary dimension.
+    5. Be sure to select the date range you want to explore.
+    6. Click the 'Fetch GSC API data' button and view the data.
+    7. Download your data as a CSV if needed.
     """
     )
