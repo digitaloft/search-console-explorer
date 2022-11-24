@@ -237,7 +237,7 @@ with tab1:
                             "Last 12 months",
                             "Last 16 months",
                         ),
-                        index=0,
+                        index=21,
                         help="Specify the date range",
                     )
 
