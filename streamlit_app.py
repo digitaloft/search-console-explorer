@@ -237,14 +237,14 @@ with tab1:
                             "Last 12 months",
                             "Last 16 months",
                         ),
-                        index=0,
+                        index=-21,
                         help="Specify the date range",
                     )
 
                     if timescale == "Last 7 days":
                         timescale = -7
-                    elif timescale == "Last 30 days":
-                        timescale = -30
+                    elif timescale == "Last 31 days":
+                        timescale = -31
                     elif timescale == "Last 3 months":
                         timescale = -91
                     elif timescale == "Last 6 months":
